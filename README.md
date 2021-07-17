@@ -1,8 +1,6 @@
-# dotfiles
+# 📦 dotfiles
 
-📦 personal dotfiles
-
-<br>
+🧑‍💻 🗄️ personal dotfiles
 
 [![GitHub](https://img.shields.io/github/license/sujaykumarh/dotfiles)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE)
 
