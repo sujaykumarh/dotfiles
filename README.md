@@ -2,7 +2,7 @@
 
 🧑‍💻 🗄️ personal dotfiles
 
-[![GitHub](https://img.shields.io/github/license/sujaykumarh/dotfiles)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?logo=github&color=brightgreen)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE)
 
 
 ### Plugins
