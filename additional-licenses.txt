@@ -1,0 +1,137 @@
+speedtest-cli
+    source: https://github.com/sivel/speedtest-cli
+
+    Copyright 2012 Matt Martz All Rights Reserved.
+
+    Licensed under the Apache License, Version 2.0 (the "License"); you may
+    not use this file except in compliance with the License. You may obtain
+    a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+    License for the specific language governing permissions and limitations
+    under the License.
+
+
+
+pacapt
+    source: https://github.com/icy/pacapt
+
+    Copyright (C) 2010 - 2014 Anh K. Huynh
+
+    Usage of the works is permitted provided that this instrument is
+    retained with the works, so that any entity that uses the works is
+    notified of this instrument.
+
+    DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
+
+
+
+ohmyzsh
+    source: https://github.com/ohmyzsh/ohmyzsh.git
+
+    MIT License
+
+    Copyright (c) 2009-2021 Robby Russell and contributors (https://github.com/ohmyzsh/ohmyzsh/contributors)
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+
+
+zsh-autosuggestions
+    source: https://github.com/zsh-users/zsh-autosuggestions.git
+
+    Copyright (c) 2013 Thiago de Arruda
+    Copyright (c) 2016-2021 Eric Freese
+
+    Permission is hereby granted, free of charge, to any person
+    obtaining a copy of this software and associated documentation
+    files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use,
+    copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following
+    conditions:
+
+    The above copyright notice and this permission notice shall be
+    included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+    OTHER DEALINGS IN THE SOFTWARE.
+
+
+zsh-completions
+    source: https://github.com/zsh-users/zsh-completions.git
+
+    The Z Shell is copyright (c) 1992-2017 Paul Falstad, Richard Coleman,
+    Zoltán Hidvégi, Andrew Main, Peter Stephenson, Sven Wischnowsky, and
+    others.  All rights reserved.  Individual authors, whether or not
+    specifically named, retain copyright in all changes; in what follows, they
+    are referred to as `the Zsh Development Group'.  This is for convenience
+    only and this body has no legal status.  The Z shell is distributed under
+    the following licence; any provisions made in individual files take
+    precedence.
+
+    Permission is hereby granted, without written agreement and without
+    licence or royalty fees, to use, copy, modify, and distribute this
+    software and to distribute modified versions of this software for any
+    purpose, provided that the above copyright notice and the following
+    two paragraphs appear in all copies of this software.
+
+    In no event shall the Zsh Development Group be liable to any party for
+    direct, indirect, special, incidental, or consequential damages arising out
+    of the use of this software and its documentation, even if the Zsh
+    Development Group have been advised of the possibility of such damage.
+
+    The Zsh Development Group specifically disclaim any warranties, including,
+    but not limited to, the implied warranties of merchantability and fitness
+    for a particular purpose.  The software provided hereunder is on an "as is"
+    basis, and the Zsh Development Group have no obligation to provide
+    maintenance, support, updates, enhancements, or modifications.
+
+
+
+
+
+Special Thanks to the following projects
+
+
+youtube-dl project
+    url: https://youtube-dl.org/
+    source: https://github.com/ytdl-org/youtube-dl/
+
+
+Major.io for https://icanhazip.com/ project
+    article: https://major.io/2021/06/06/a-new-future-for-icanhazip/
+    faq: https://major.io/icanhazip-com-faq/
+    source: https://github.com/major
+
+
+Dutchcoders for transfer.sh project
+    source: https://github.com/dutchcoders/transfer.sh
+    url: https://transfer.sh

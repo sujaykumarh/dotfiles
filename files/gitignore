@@ -81,10 +81,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+## software defaults
+node_modules
+vendor
+
+
 
 ## Custom config
 !.gitkeep
 .env
 
-local.env
-git.cfg
+## Optional Docker compose yml
+#docker-compose.yml

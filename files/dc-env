@@ -1,0 +1,37 @@
+# TODO: MODIFY THIS DOCKER ENV FILE FOR YOUR NEEDS
+
+##
+# Project source
+##
+SRC=./src
+
+
+
+##
+# Server Config
+##
+
+HTTP_PORT=HTTP_PORT_HERE
+
+## OTHER PORTS
+#PORT_=PORT_HERE
+#PORT_=PORT_HERE
+#PORT_=PORT_HERE
+
+
+
+
+##
+# ADMIN Config
+##
+ADMIN_USER=database
+ADMIN_PASSWORD=database
+
+
+
+##
+# Persistent Storage
+##
+
+# Data Storage
+STORAGE=./storage

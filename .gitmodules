@@ -1,0 +1,9 @@
+[submodule "modules/zsh/plugins/ohmyzsh"]
+	path = modules/zsh/plugins/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "modules/zsh/plugins/autosuggestions"]
+	path = modules/zsh/plugins/autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "modules/zsh/plugins/completions"]
+	path = modules/zsh/plugins/completions
+	url = https://github.com/zsh-users/zsh-completions.git

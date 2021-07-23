@@ -1,0 +1,63 @@
+# TODO: MODIFY THIS DOCKER ENV FILE FOR YOUR NEEDS
+
+##
+# Project source
+##
+SRC=./src
+
+
+##
+# Server Config
+##
+
+## WebServer
+
+## PHP INI File
+# PHP_INI=./config/php/php.ini-development
+PHP_INI=./config/php/php.ini-production
+
+
+HTTP_PORT=HTTP_PORT_HERE
+SERVER_HOST=localhost:HTTP_PORT_HERE
+SERVER_PROTCOL=http
+SERVER_WEBROOT=/
+# TIME_ZONE=Etc/UTC
+
+## OTHER PORTS
+#PORT_=PORT_HERE
+#PORT_=PORT_HERE
+#PORT_=PORT_HERE
+
+##
+# Websockets Port Config
+# beyondcode/laravel-websockets pusher alternative
+##
+#WS_PORT=WS_PORT_HERE
+
+
+##
+# Database Config
+##
+DB_NAME=database
+DB_USER=database
+DB_PASSWORD=database
+DB_ROOT_PASSWORD=database
+
+
+
+##
+# Persistent Storage
+##
+
+# Cache Storage
+COMPOSER_CACHE=./cache/composer
+COMPOSER_DOWNLOAD_CACHE=/home/HOME_PATH/.cache/composer
+
+NODE_CACHE=./cache/node
+
+LARAVEL_BOOTSTRAP_CACHE=./cache/bootstrap
+
+# Data Storage
+DATA_DIR_SERVER=./storage/server
+DATA_DIR_DB=./storage/db
+DATA_DIR_REDIS=./storage/redis
