@@ -46,7 +46,7 @@ prompt_git() {
 				_branchChar_color='yellow'
 			fi
     else
-      _branch_char+=" ✅"
+      _branch_char="✅"
 		fi
 
 
