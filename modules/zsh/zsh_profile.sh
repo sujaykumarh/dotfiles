@@ -81,7 +81,11 @@ fi
 source $DOTFILES_DIR/modules/zsh/plugins/ohmyzsh/oh-my-zsh.sh
 
 
+# AutoSuggestions
+source $DOTFILES_DIR/modules/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 
+# Auto Completions
+source $DOTFILES_DIR/modules/zsh/plugins/completions/zsh-completions.plugin.zsh
 
 
 ## Load custom aliases
