@@ -57,6 +57,22 @@ Windows         | ❌ | ❌ |
 
 <br>
 
+## 🛠️ Setup
+
+setup dotfile directly
+
+```
+curl https://git.io/JBHRh | sh
+```
+
+or
+
+```bash
+curl https://raw.githubusercontent.com/sujaykumarh/dotfiles/main/setup.sh | sh
+```
+
+<br>
+
 ## 🛠️ Usage
 
 **clone**
