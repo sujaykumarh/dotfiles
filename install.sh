@@ -33,10 +33,10 @@ done
 ###
 
 requiredPKGs=(
-	figlet		# figlet	- figlet
+	# figlet		# figlet	- figlet
 	zsh			# zsh 		- Shell
 	fzf			# fzf 		- fuzzy finder
-	util-linux
+	util-linux  # linux utils
 	# tmux		# tmux 		- tmux terminal
 	# vim			# vim		- vim editor
 )
