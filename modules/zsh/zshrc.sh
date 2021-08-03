@@ -9,7 +9,7 @@ esac
 
 
 # Source local.env
-[[ -f $DOTFILES_DIR/local.env ]] && source $DOTFILES_DIR/local.env || source $DOTFILES_DIR/default.env
+[[ -f $DOTFILES_DIR/local.env ]] && source $DOTFILES_DIR/local.env || echo "$DOTFILES_DIR/local.env not found. run init.sh in $DOTFILES_DIR"
 
 
 # Vars

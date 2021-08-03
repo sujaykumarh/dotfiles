@@ -23,14 +23,16 @@ else
 fi
 
 ## Default Dotfiles config
-DOTFILES_CFG="default.env"
-DOTFILES_CFG_EXAMPLE="local.env"
+DOTFILES_CFG="local.env"
+DOTFILES_CFG_EXAMPLE="default.env"
     
 if [ -f $DOTFILES_CFG ]; then
     echo "$DOTFILES_CFG alreay exists. remove it and re-run init.sh"
 else
     cp $CURRENT_DIR/$DOTFILES_CFG_EXAMPLE $CURRENT_DIR/$DOTFILES_CFG
     echo "copied $DOTFILES_CFG_EXAMPLE >> $DOTFILES_CFG"
+
+	sed -i "s,DOTFILES_PATH_HERE,$CURRENT_DIR,g" $CURRENT_DIR/$DOTFILES_CFG
     echo "edit $DOTFILES_CFG file."
 fi
 
