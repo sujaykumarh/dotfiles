@@ -62,13 +62,13 @@ Windows         | ❌ | ❌ |
 setup dotfile directly
 
 ```
-curl https://git.io/JBHRh | sh
+curl -s -L https://git.io/JBHRh | sh
 ```
 
 or
 
 ```bash
-curl https://raw.githubusercontent.com/sujaykumarh/dotfiles/main/setup.sh | sh
+curl -s -L https://raw.githubusercontent.com/sujaykumarh/dotfiles/main/setup.sh | sh
 ```
 
 <br>
