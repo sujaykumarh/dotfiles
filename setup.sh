@@ -133,6 +133,7 @@ installPkg(){
 echo "Setting up required packages.."
 
 ## Install required
+installPkg sudo
 installPkg git
 
 echo "Done! Setting up required packages"
