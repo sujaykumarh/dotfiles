@@ -2,6 +2,11 @@
 ## Docker Aliases ##
 ####################
 
+# return if docker is not installed
+if [[ `which docker` == "docker not found" ]]; then
+    return
+fi
+
 ## Docker
 alias dk="docker"   # short for docker
 alias dkpull="docker pull"   # short for Pull Docker image
