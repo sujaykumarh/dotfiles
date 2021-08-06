@@ -63,6 +63,13 @@ Windows         | ❌ | ❌ |
 
 <br>
 
+
+## 🧑‍💻 Available Shortcuts and Usage
+
+see [USAGE.md](USAGE.md)
+
+<br>
+
 ## 🛠️ Setup
 
 setup dotfile directly
@@ -131,9 +138,9 @@ cd ~/dotfiles && sh docker.sh
 
 <br>
 
-## Contributing
+## 📝 Contributing
 
-Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/dotfiles/blob/main/.github/CONTRIBUTING.md).
+All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/dotfiles/blob/main/.github/CONTRIBUTING.md).
 
 <br>
 
