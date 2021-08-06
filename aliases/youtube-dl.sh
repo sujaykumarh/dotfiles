@@ -24,5 +24,6 @@ _ytdlAudio() {
 }
 
 alias youtube-dl='_ytdl'
+alias ytdl='_ytdl'
 alias youtube-dl-audio='noglob _ytdlAudio' # fix for youtube-dl
 alias ytdl-audio='youtube-dl-audio'
