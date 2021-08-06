@@ -10,9 +10,11 @@ export VISUAL="$DEFAULT_CRONTAB_EDITOR"
 
 # Aliases
 
-alias ls='ls --color=auto'
+alias ls='ls -CF --color=auto'
 alias ll='ls -l'
+alias llh='ls -lh'
 alias la='ls -A'
+alias lah='ls -lAh'
 alias l='ls -CF'
 alias youtube-dl='noglob youtube-dl' # fix for youtube-dl
 alias v="vim -p"
@@ -27,9 +29,3 @@ cdls() {
     builtin cd "$@" && ls;
 }
 alias cd="cdls"
-
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
