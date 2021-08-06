@@ -12,7 +12,7 @@ all plugins and its config go `modules` directory respective folder
 plugin | available | tested | working | 
 ------ | --------- | ------ | ------- |
 zsh     | ☑️ | ☑️ | ☑️ |
-fzf     | ☑️ | ☑️ | ⬛ |
+fzf     | ☑️ | ☑️ | ☑️ |
 vim     | ☑️ | ⬛ | ⬛ |
 tmux    | ☑️ | ⬛ | ⬛ |
 <!-- tmux    | ☑️ | ⬛ | ⬛ | -->
@@ -25,8 +25,8 @@ If you would like to add support / publish test results create issue or pr all c
 
 OS | Supported | Tested
 -- | --------- | --------
-Ubuntu          | ☑️ | ☑️ |
 ArchLinux       | ☑️ | ☑️ |
+Ubuntu          | ☑️ | ⬛ |
 Other Linux     | ☑️ | ⬛ |
 MacOS           | ⬛ | ❌ |
 Windows         | ❌ | ❌ |
