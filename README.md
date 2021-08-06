@@ -59,7 +59,8 @@ Windows         | ❌ | ❌ |
 
 ## 📸 ScreenShot
 
-[![screenshot](.github/ss.png)](#ScreenShot)
+[![screenshot](.github/ss.png)](#)
+[![screenshot2](.github/ss2.png)](#)
 
 <br>
 
