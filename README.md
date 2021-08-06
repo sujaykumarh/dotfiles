@@ -57,6 +57,12 @@ Windows         | ❌ | ❌ |
 
 <br>
 
+## 📸 ScreenShot
+
+[![screenshot](.github/ss.png)](#ScreenShot)
+
+<br>
+
 ## 🛠️ Setup
 
 setup dotfile directly
