@@ -65,7 +65,7 @@ alias dcr="docker-compose"
 alias dcrbuild="docker-compose build"
 
 ## Docker Compose Build run in detach mode pull container up
-alias dcrdbuild="docker-compose up -d --build"
+alias dcrbuildrun="docker-compose up -d --build"
 
 ## Docker Compose RUN Container
 alias dcrun="docker-compose run"
