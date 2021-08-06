@@ -30,8 +30,10 @@ source $DOTFILES_DIR/aliases/default.sh
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
-# source keybindings
-source $DOTFILES_DIR/modules/zsh/keybindings.sh
 
 # for profile
 source $DOTFILES_DIR/modules/zsh/zsh_profile.sh
+
+
+# source keybindings
+source $DOTFILES_DIR/modules/zsh/keybindings.sh

@@ -37,6 +37,9 @@ requiredPKGs=(
 	zsh				# zsh 		- Shell
 	fzf				# fzf 		- fuzzy finder
 	util-linux  	# linux utils
+
+	tree			# for listing previews in fzf
+	bind			# for dig commands useful for ssh and other dns lookups
 	
 	# figlet		# figlet	- figlet
 	# tmux			# tmux 		- tmux terminal

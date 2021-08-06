@@ -7,3 +7,6 @@
 [submodule "modules/zsh/plugins/completions"]
 	path = modules/zsh/plugins/completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "modules/zsh/plugins/fzf-tab"]
+	path = modules/zsh/plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab.git

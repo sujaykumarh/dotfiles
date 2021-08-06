@@ -106,16 +106,21 @@ prompt_extra() {
     # if in git directory
     prompt_git
   else
-    # show time
-    RPROMPT='%{$_lineup%} %{$fg[yellow]%}[%D{%L:%M:%S}] %{$_linedown%}%{$reset_color%}%'
+    # show time 
+    # TODO: needs [BUG-break] fixed
+    # RPROMPT='%{$_lineup%}% {$fg[yellow]%}[%D{%L:%M:%S}] %{$_linedown%}%{$reset_color%}%'
+
+    RPROMPT='%{$_lineup%}% %{$_linedown%}%{$reset_color%}%'
   fi
 }
 
 prompt_extra
+
+## TODO: [BUG-break] resetting prompt causes autocompletion to break
 ## Update RPROMPT Contineously https://askubuntu.com/a/360172
-setopt PROMPT_SUBST
-TMOUT=1
-TRAPALRM() {
-  prompt_extra
-  zle reset-prompt
-}
+# setopt PROMPT_SUBST
+# TMOUT=1
+# TRAPALRM() {
+#   prompt_extra
+#   # zle reset-prompt
+# }

@@ -11,15 +11,16 @@ al --> alt key
 cm --> command / windows key
 ```
 
-command     | description
------------ | -------------------------------
-ct + g      | git commit and push
-ct + r      | reset & clear
-ct + h      | goto home
-ct + v      | edit previous command and run
-ct + l      | list files, `ls` command
-ct + s      | add `sudo` to command
-ct + k      | goto previous directory, `cd ..`
+command             | description
+------------------- | -------------------------------
+ct + g              | git commit and push
+ct + r              | reset & clear
+ct + h              | run commands for history
+ct + al + h         | goto home
+ct + v              | edit previous command and run
+ct + l              | list files, `ls` command
+ct + s              | add `sudo` to command
+ct + k              | goto previous directory, `cd ..`
 
 <br>
 
