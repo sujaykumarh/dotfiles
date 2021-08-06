@@ -2,7 +2,8 @@
 
 ## example: https://github.com/junegunn/fzf#demo
 
-export FZF_COMPLETION_TRIGGER='**'  # default
+# export FZF_COMPLETION_TRIGGER='**'  # default
+export FZF_COMPLETION_TRIGGER=''  # custom
 
 export FZF_COMPLETION_OPTS='--border --info=inline --no-height'
 

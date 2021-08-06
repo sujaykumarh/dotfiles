@@ -96,6 +96,8 @@ build_prompt() {
   prompt_user
   prompt_dir
   prompt_end
+
+  prompt_extra
 }
 
 PROMPT='$(build_prompt)'

@@ -87,11 +87,11 @@ source $DOTFILES_DIR/modules/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 # Auto Completions
 source $DOTFILES_DIR/modules/zsh/plugins/completions/zsh-completions.plugin.zsh
 
-# FZF
-source $DOTFILES_DIR/modules/fzf/fzf.sh
-
 # fzf tab
 source $DOTFILES_DIR/modules/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+
+# FZF
+source $DOTFILES_DIR/modules/fzf/fzf.sh
 
 ## Load custom aliases
 for _custom_alias in $DOTFILES_DIR/aliases/*.sh
