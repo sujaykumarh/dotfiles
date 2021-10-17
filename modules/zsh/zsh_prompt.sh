@@ -96,8 +96,6 @@ build_prompt() {
   prompt_user
   prompt_dir
   prompt_end
-
-  prompt_extra
 }
 
 PROMPT='$(build_prompt)'
@@ -116,7 +114,7 @@ prompt_extra() {
   fi
 }
 
-prompt_extra
+# prompt_extra
 
 ## TODO: [BUG-break] resetting prompt causes autocompletion to break
 ## Update RPROMPT Contineously https://askubuntu.com/a/360172

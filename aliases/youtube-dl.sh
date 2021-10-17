@@ -8,7 +8,7 @@ _ytdl(){
         echo "youtube-dl was not found! Please install youtube-dl"
         return
     fi
-    youtube-dl $@
+    noglob youtube-dl $@
 }
 
 _ytdlAudio() {
@@ -23,6 +23,7 @@ _ytdlAudio() {
     _ytdl -f 140 "$@"
 }
 
+# alias youtube-dl='noglob youtube-dl' # fix for youtube-dl
 alias youtube-dl='_ytdl'
 alias ytdl='_ytdl'
 alias youtube-dl-audio='noglob _ytdlAudio' # fix for youtube-dl
