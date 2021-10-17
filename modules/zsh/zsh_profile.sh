@@ -91,7 +91,8 @@ source $DOTFILES_DIR/modules/zsh/plugins/completions/zsh-completions.plugin.zsh
 source $DOTFILES_DIR/modules/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
 # FZF
-source $DOTFILES_DIR/modules/fzf/fzf.sh
+# source $DOTFILES_DIR/modules/fzf/fzf.sh
+# source $DOTFILES_DIR/modules/fzf/custom.fzf-tab.sh
 
 ## Load custom aliases
 for _custom_alias in $DOTFILES_DIR/aliases/*.sh

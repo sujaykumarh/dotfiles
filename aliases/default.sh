@@ -16,7 +16,6 @@ alias llh='ls -lh'
 alias la='ls -A'
 alias lah='ls -lAh'
 alias l='ls -CF'
-alias youtube-dl='noglob youtube-dl' # fix for youtube-dl
 alias v="vim -p"
 
 # GREP command
