@@ -47,7 +47,7 @@ _vscode(){
         $VSCODE $CURDIR
     else
         # echo "folder: $1"
-        $VSCODE $1
+        $VSCODE $@
     fi
 }
 alias code='_vscode'
