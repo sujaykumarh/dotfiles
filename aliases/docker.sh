@@ -24,7 +24,7 @@ alias dkps-default="docker ps"
 alias dkpsl="docker ps -a"
 
 alias dkps-kill="docker kill"
-alias dkps-killall="[ "$(docker container ls -q)" ] && docker kill $(docker container ls -q) || echo 'no containers running..'"
+alias dkps-killall="docker kill $(docker container ls -q)"
 
 ## Service
 alias dks="docker service"
