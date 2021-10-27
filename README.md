@@ -26,7 +26,7 @@ If you would like to add support / publish test results create issue or pr all c
 OS | Supported | Tested
 -- | --------- | --------
 ArchLinux       | ☑️ | ☑️ |
-Ubuntu          | ☑️ | ⬛ |
+Ubuntu          | ☑️ | ☑️ |
 Other Linux     | ☑️ | ⬛ |
 MacOS           | ⬛ | ❌ |
 Windows         | ❌ | ❌ |
