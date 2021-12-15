@@ -81,7 +81,7 @@ alias dcrunrm="docker-compose run --rm"
 ## Custom Docker Cleaner Script ##
 ##################################
 alias docker-cleanup="sh $DOTFILES_DIR/scripts/cleanup-docker.sh"
-
+alias docker-cleanUntagged='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 
 # CURRENT_UID is used for docker user mount
 # CURRENT_UID=$(id -u):$(id -g)
