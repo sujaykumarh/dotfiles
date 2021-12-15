@@ -1,8 +1,28 @@
 # 📦 dotfiles
 
-🧑‍💻 🗄️ personal dotfiles
+🧑‍💻 🗄️ personal `zsh` dotfiles
 
 [![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?logo=github&color=brightgreen)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE)
+
+<br>
+
+**default branch**: `dev`
+
+branch | type | description
+--- | --- | ---
+main | ✅ | stable branch
+dev | 🛠️ | all latest changes are continuously pushed to this branch
+fix | 🔥 🛠️ | pull requests, fixes etc that needs attention
+
+<br>
+
+🛠️ : work in progress
+
+✅ : stable
+
+🔥 : hotfix needs attention
+
+<br>
 
 
 ### Plugins
@@ -173,7 +193,10 @@ for [additional LICENSEs](https://github.com/sujaykumarh/dotfiles/blob/main/addi
 
 ## 📅 Changelog
 
+**updated when dev branch is merged with main branch**
+
 Read [CHANGELOG.md](https://github.com/sujaykumarh/dotfiles/blob/main/CHANGELOG.md)
+
 
 <br>
 
