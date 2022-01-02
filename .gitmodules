@@ -10,3 +10,6 @@
 [submodule "modules/zsh/plugins/fzf-tab"]
 	path = modules/zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "modules/goto"]
+	path = modules/goto
+	url = https://github.com/iridakos/goto.git
