@@ -68,9 +68,8 @@ _composer(){
         # _checkPkg php
         if _checkPkg composer; then
             echo "executing composer $@"
-            composerExe $@
+            /usr/local/bin/composer $@
         fi
     fi
 }
-alias composerExe=`whereis composer | awk '{print $2}'`
 alias composer=_composer

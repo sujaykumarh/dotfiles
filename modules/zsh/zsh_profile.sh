@@ -90,6 +90,9 @@ source $DOTFILES_DIR/modules/zsh/plugins/completions/zsh-completions.plugin.zsh
 # fzf tab
 source $DOTFILES_DIR/modules/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
+# goto
+source $DOTFILES_DIR/modules/goto/goto.sh
+
 # FZF
 # source $DOTFILES_DIR/modules/fzf/fzf.sh
 # source $DOTFILES_DIR/modules/fzf/custom.fzf-tab.sh
