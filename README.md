@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/media/windowsterminal.svg" height="20"> dotfiles
+# <img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/windowsterminal.svg" height="20"> dotfiles
 
 my `zsh` dotfiles, for all my workstations.
 
