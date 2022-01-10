@@ -11,19 +11,49 @@ zle -N up_widget
 bindkey "^k" up_widget
 
 # git
-function git_prepare() {
-	if [ -n "$BUFFER" ]; then
-		BUFFER="git add -A && git commit -m \"$BUFFER\" && git push"
-	fi
+# [testing]: use gitmoji instead of git if available
+if [ -x "$(command -v gitmoji)" ]; then
+	# use gitmoji if available instead of git
+	function gitmoji_prep() {
+		if [ -z "$BUFFER" ]; then
+			BUFFER="git add -A && gitmoji -c && git push"
+		fi
 
-	if [ -z "$BUFFER" ]; then
-		BUFFER="git add -A && git commit -v && git push"
-	fi
+		zle accept-line
+	}
+	zle -N gitmoji_prep
+	bindkey "^g" gitmoji_prep
+else
+	# use default git if gitmoji is not available
+	function git_prepare() {
+		if [ -n "$BUFFER" ]; then
+			BUFFER="git add -A && git commit -m \"$BUFFER\" && git push"
+		fi
 
-	zle accept-line
-}
-zle -N git_prepare
-bindkey "^g" git_prepare
+		if [ -z "$BUFFER" ]; then
+			BUFFER="git add -A && git commit -v && git push"
+		fi
+
+		zle accept-line
+	}
+	zle -N git_prepare
+	bindkey "^g" git_prepare
+fi
+
+# previous default ctrl+g command for git
+# function git_prepare() {
+# 	if [ -n "$BUFFER" ]; then
+# 		BUFFER="git add -A && git commit -m \"$BUFFER\" && git push"
+# 	fi
+
+# 	if [ -z "$BUFFER" ]; then
+# 		BUFFER="git add -A && git commit -v && git push"
+# 	fi
+
+# 	zle accept-line
+# }
+# zle -N git_prepare
+# bindkey "^g" git_prepare
 
 # home ctrl + alt + h
 function goto_home() {
