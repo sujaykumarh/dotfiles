@@ -1,4 +1,5 @@
-DOTFILES_DIR="~/dotfiles"
+# replaced on install
+DOTFILES_DIR="PATH_TO_DOTFILES"
 
 export DOTFILES_DIR=$DOTFILES_DIR
 

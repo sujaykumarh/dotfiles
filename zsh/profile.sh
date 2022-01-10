@@ -91,4 +91,4 @@ done
 
 
 ## Source prompt
-source $DOTFILES_DIR/zsh/prompt.sh
+# source $DOTFILES_DIR/zsh/prompt.sh
