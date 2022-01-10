@@ -1,167 +1,93 @@
-# 📦 dotfiles
+<div align="center">
 
-🧑‍💻 🗄️ personal `zsh` dotfiles
+# <img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/media/windowsterminal.svg" height="20"> dotfiles
 
-[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?logo=github&color=brightgreen)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE)
+my `zsh` dotfiles, for all my workstations.
+
+
+[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?logo=github&color=green)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE) [![wiki](https://img.shields.io/badge/Read-Wiki-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/wiki) [![GitHub issues](https://img.shields.io/github/issues/sujaykumarh/dotfiles?color=orange)](https://github.com/sujaykumarh/dotfiles/issues)
+
+<p align="center">
+<sub> to get started clone </sub>
+<br>
+<!-- ToDo replace with setup script -->
+<h3>git clone https://github.com/sujaykumarh/dotfiles.git</h3>
+</p>
+
+
+**dotfiles is currently in process of being updated. use `main` branch or for stable release wait untill this text is removed**
+
+</div>
+
+<!-- **default 🌿**: `dev` -->
+
+<!--
+
+**setup**
+
+```bash
+# ToDo replace with setup script
+```
+
+-->
 
 <br>
 
-**default branch**: `dev`
+**📷 Screenshot**
 
-branch | type | description
+[![screenshot](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss.png)](#)
+
+
+<br>
+
+**📝 Contributing**
+
+All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/dotfiles/blob/main/.github/CONTRIBUTING.md).
+
+<br>
+
+**⚖️ Stability**
+
+<sub> branch info and its stability </sub>
+
+branch |  | description
 --- | --- | ---
-main | ✅ | stable branch
-dev | 🛠️ | all latest changes are continuously pushed to this branch
-fix | 🔥 🛠️ | pull requests, fixes etc that needs attention
+main | ✅ stable | stable branch
+dev | 🛠️ WIP | active development
+fix | 🔥 fix | pull requests, fixes etc..
+
 
 <br>
 
-<sub>
+**🔌 Plugins**
 
-🛠️ work in progress, ✅stable, 🔥hotfix needs attention
-
-</sub>
-
-<br>
-
-
-### Plugins
-
-all plugins and its config go `modules` directory respective folder
+all plugins available in dotfiles.
 
 plugin | available | tested | working | 
 ------ | --------- | ------ | ------- |
 zsh     | ☑️ | ☑️ | ☑️ |
 fzf     | ☑️ | ☑️ | ☑️ |
-vim     | ☑️ | ⬛ | ⬛ |
-tmux    | ☑️ | ⬛ | ⬛ |
+vim     | ⬛ | ⬛ | ⬛ |
+tmux    | ⬛ | ⬛ | ⬛ |
 <!-- tmux    | ☑️ | ⬛ | ⬛ | -->
 
-<!-- ⬛ ☑️ ❌ -->
-
-### Supported Systems
-
-If you would like to add support / publish test results create issue or pr all contributions are welcome
-
-OS | Supported | Tested
--- | --------- | --------
-ArchLinux       | ☑️ | ☑️ |
-Ubuntu          | ☑️ | ☑️ |
-Other Linux     | ☑️ | ⬛ |
-MacOS           | ⬛ | ❌ |
-Windows         | ❌ | ❌ |
-
-
-### Directory Structure
-
-```
-/                   root directory
-|--/aliases/        dotfile aliases
-|--/backup/         backupfiles created when ./install.sh is ran
-|--/dot-scripts/    scripts required by dotfiles setup
-|--/files/          template files
-|--/modules/        all plugin modules zsh, tmux etc..
-|--/scripts/        scripts used by aliases 
-|
-|-- default.env     dotfiles default env file 
-|-- init.sh         dotfiles initilization script ran before install
-|-- install.sh      dotfiles setup script
-|-- remove.sh       dotfiles removal script #TODO
-|-- menu.sh         dotfiles shell gui menu #TODO
-|-- LICENSE         dotfiles license
-|-- addi..ses.txt   additional licenses
-|
-|-- git.cfg         local global git config
-|-- local.env       local env file
-```
+<sub>☑️ working, ⬛ no-status, ❌ not-supported</sub>
 
 <br>
 
-## 📸 ScreenShot
+**💻 Supported Systems**
 
-[![screenshot](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss.png)](#)
-[![screenshot2](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss2.png)](#)
+<sub>If you would like to add support / publish test results create issue or pr all contributions are welcome</sub>
 
-<br>
+OS | Supported | Tested | description
+--------------- | -- | -- | ---
+ArchLinux       | ☑️ | ☑️ | working and tested
+Ubuntu          | ☑️ | ☑️ | working and tested on v20.04+
+Unix            | ☑️ | ⬛ | should work else create issue
+MacOS           | ⬛ | ❌ | not tested should probably work else create issue
+Windows         | ❌ | ❌ | no plan to support as of now create pr for support
 
-
-## 🧑‍💻 Available Shortcuts and Usage
-
-see [USAGE.md](USAGE.md)
-
-<br>
-
-## 🛠️ Setup
-
-setup dotfile directly
-
-```
-curl -s -L https://git.io/JBHRh | sh
-```
-
-or
-
-```bash
-curl -s -L https://raw.githubusercontent.com/sujaykumarh/dotfiles/main/setup.sh | sh
-```
-
-<br>
-
-## 🛠️ Usage
-
-**clone**
-
-```bash
-git clone https://github.com/sujaykumarh/dotfiles.git ~/dotfiles
-```
-
-**Config**
-
-Initialize dotfiles local config files by running `sh init.sh`
-
-```bash
-cd ~/dotfiles && sh init.sh
-```
-
-**Menu**
-
-configure dotfiles on system using interactive menu
-
-```bash
-# TODO
-
-cd ~/dotfiles && sh menu.sh
-```
-
-**Install**
-
-```bash
-cd ~/dotfiles && sh install.sh
-```
-
-**Remove**
-
-```
-cd ~/dotfiles && sh remove.sh
-```
-
-<br>
-
-## 🔧 Development
-
-
-```bash
-git clone https://github.com/sujaykumarh/dotfiles.git ~/dotfiles
-
-# TODO
-cd ~/dotfiles && sh docker.sh
-```
-
-<br>
-
-## 📝 Contributing
-
-All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/dotfiles/blob/main/.github/CONTRIBUTING.md).
+<sub>☑️ working, ⬛ no-status, ❌ not-supported</sub>
 
 <br>
 
@@ -193,13 +119,11 @@ for [additional LICENSEs](https://github.com/sujaykumarh/dotfiles/blob/main/addi
 
 ## 📅 Changelog
 
-**updated when dev branch is merged with main branch**
-
-Read [CHANGELOG.md](https://github.com/sujaykumarh/dotfiles/blob/main/CHANGELOG.md)
+Read [CHANGELOG.md](CHANGELOG.md)
 
 
 <br>
 
-### 😀 Inspiration
+**😀 Inspiration**
 
 Inspired by [Parth/dotfiles](https://github.com/Parth/dotfiles) and other OpenSource github repos on [dotfiles topic](https://github.com/topics/dotfiles)
