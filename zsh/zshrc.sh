@@ -32,8 +32,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 
 # for profile
-source $DOTFILES_DIR/modules/zsh/zsh_profile.sh
+source $DOTFILES_DIR/zsh/profile.sh
 
 
 # source keybindings
-source $DOTFILES_DIR/modules/zsh/keybindings.sh
+source $DOTFILES_DIR/zsh/keybindings.sh

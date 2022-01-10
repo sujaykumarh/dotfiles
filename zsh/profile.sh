@@ -73,25 +73,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
-
 # enable zsh plugins
-
-## OhMyZSH
-source $DOTFILES_DIR/modules/zsh/plugins/ohmyzsh/oh-my-zsh.sh
-
-
-# AutoSuggestions
-source $DOTFILES_DIR/modules/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
-
-# Auto Completions
-source $DOTFILES_DIR/modules/zsh/plugins/completions/zsh-completions.plugin.zsh
-
-# fzf tab
-source $DOTFILES_DIR/modules/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
-
-# goto
-source $DOTFILES_DIR/modules/goto/goto.sh
+# source $DOTFILES_DIR/zsh/plugins.sh
 
 # FZF
 # source $DOTFILES_DIR/modules/fzf/fzf.sh
@@ -108,4 +91,4 @@ done
 
 
 ## Source prompt
-source $DOTFILES_DIR/modules/zsh/zsh_prompt.sh
+source $DOTFILES_DIR/zsh/prompt.sh

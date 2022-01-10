@@ -1,6 +1,4 @@
-
-# dot not edit this is replaced with sed when installed
-DOTFILES_DIR="DOTFILES_PATH_HERE"
+DOTFILES_DIR="~/dotfiles"
 
 export DOTFILES_DIR=$DOTFILES_DIR
 
@@ -9,4 +7,4 @@ echo "Updating git modules"
 (cd $DOTFILES_DIR && git submodule update --init --recursive && reset)
 
 # use zshrc
-source $DOTFILES_DIR/modules/zsh/zshrc.sh
+source $DOTFILES_DIR/zsh/zshrc.sh
