@@ -1,14 +1,14 @@
-[submodule "modules/zsh/plugins/ohmyzsh"]
-	path = modules/zsh/plugins/ohmyzsh
+[submodule "zsh/plugins/ohmyzsh"]
+	path = zsh/plugins/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "modules/zsh/plugins/completions"]
-	path = modules/zsh/plugins/completions
+[submodule "zsh/plugins/completions"]
+	path = zsh/plugins/completions
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "modules/zsh/plugins/autosuggestions"]
-	path = modules/zsh/plugins/autosuggestions
+[submodule "zsh/plugins/autosuggestions"]
+	path = zsh/plugins/autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "modules/zsh/plugins/fzf-tab"]
-	path = modules/zsh/plugins/fzf-tab
+[submodule "zsh/plugins/fzf-tab"]
+	path = zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
 [submodule "modules/goto"]
 	path = modules/goto
