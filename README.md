@@ -16,11 +16,11 @@ fix | 🔥 🛠️ | pull requests, fixes etc that needs attention
 
 <br>
 
-🛠️ : work in progress
+<sub>
 
-✅ : stable
+🛠️ work in progress, ✅stable, 🔥hotfix needs attention
 
-🔥 : hotfix needs attention
+</sub>
 
 <br>
 
@@ -79,8 +79,8 @@ Windows         | ❌ | ❌ |
 
 ## 📸 ScreenShot
 
-[![screenshot](.github/ss.png)](#)
-[![screenshot2](.github/ss2.png)](#)
+[![screenshot](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss.png)](#)
+[![screenshot2](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss2.png)](#)
 
 <br>
 
