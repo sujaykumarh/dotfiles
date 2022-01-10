@@ -5,6 +5,9 @@
 # ## Licensed under the Apache License, Version 2.0   ##
 # ######################################################
 
+# ToDo: replace with one script (npm-cli) to manage dotfiles
+
+
 ## Setup script for dotfiles
 
 ## curl https://raw.githubusercontent.com/sujaykumarh/dotfiles/main/setup.sh | sh

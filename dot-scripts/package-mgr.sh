@@ -81,6 +81,7 @@ _prompt_install() {
     # echo "askYN_ANS $askYN_ANS"
     if [ "$askYN_ANS" == "n" ];then
         echo -e "\n\n Packages are required please install these and run install script again."
-        exit
+        # exit
+        # ToDo: Better way to exit
     fi
 }

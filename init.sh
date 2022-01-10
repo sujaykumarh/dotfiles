@@ -5,6 +5,8 @@
 # ## Licensed under the Apache License, Version 2.0   ##
 # ######################################################
 
+# ToDo: replace with one script (npm-cli) to manage dotfiles
+
 # echo $varHERE | rev | cut -f 1-2 -d '/' | rev`
 
 ## Init dotfiles

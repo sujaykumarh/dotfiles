@@ -5,6 +5,10 @@
 # ## Licensed under the Apache License, Version 2.0   ##
 # ######################################################
 
+# ToDo: replace with one script (npm-cli) to manage dotfiles
+
+# ToDo: Add better install prompt using npm-cli
+
 ################################
 ## Install dotfiles on system ##
 ################################
@@ -54,8 +58,7 @@ checkPackages $requiredPKGs
 #####
 ## Backup old rc files and configs
 #####
-# TODO: make backup based on date&time to reload during uninstall
-# TODO: dotfiles/backup/20211012_1432/files_here
+# TODO: restore backups during uninstall from dotfiles/backup/20211012_1432/files_here
 _backupFile(){
 	fromFile=$1
 	toFile=$2
