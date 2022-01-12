@@ -8,7 +8,8 @@
 
 # help: https://unix.stackexchange.com/a/117162
 
-# up
+# go upa a directory
+# ctrl + k
 function up_widget() {
     BUFFER="cd .."
     zle accept-line
@@ -16,7 +17,8 @@ function up_widget() {
 zle -N up_widget
 bindkey "^k" up_widget
 
-# git
+# perform git operations
+# ctrl + g
 function git_prepare() {
     (( $+commands[git] )) || return
     
@@ -56,22 +58,8 @@ function git_prepare() {
 zle -N git_prepare
 bindkey "^g" git_prepare
 
-# previous default ctrl+g command for git
-# function git_prepare() {
-# 	if [ -n "$BUFFER" ]; then
-# 		BUFFER="git add -A && git commit -m \"$BUFFER\" && git push"
-# 	fi
-
-# 	if [ -z "$BUFFER" ]; then
-# 		BUFFER="git add -A && git commit -v && git push"
-# 	fi
-
-# 	zle accept-line
-# }
-# zle -N git_prepare
-# bindkey "^g" git_prepare && git push
-
 # push to remote
+# ctrl + p
 function git_push() {
     # if in git directory
     if [[ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]]; then
@@ -85,7 +73,8 @@ function git_push() {
 zle -N git_push
 bindkey "^p" git_push
 
-# home ctrl + alt + h
+# go to user home 
+# alt + ctrl + h
 function goto_home() {
     BUFFER="cd ~/"$BUFFER
     zle end-of-line
@@ -95,14 +84,15 @@ zle -N goto_home
 bindkey "^[^h" goto_home
 
 # Edit and rerun
-function edit_and_run() {
-    BUFFER="fc"
-    zle accept-line
-}
-zle -N edit_and_run
-bindkey "^v" edit_and_run
+# function edit_and_run() {
+#     BUFFER="fc"
+#     zle accept-line
+# }
+# zle -N edit_and_run
+# bindkey "^v" edit_and_run
 
-# LS
+# run ls command
+# ctrl + l
 function ctrl_l() {
     BUFFER="ls"
     zle accept-line
@@ -110,14 +100,16 @@ function ctrl_l() {
 zle -N ctrl_l
 bindkey "^l" ctrl_l
 
-# Enter
+# insted of hitting Enter
+# ctrl + o
 function enter_line() {
     zle accept-line
 }
 zle -N enter_line
 bindkey "^o" enter_line
 
-# Sudo
+# add sudo at the beginning of the line
+# ctrl + s
 function add_sudo() {
     BUFFER="sudo "$BUFFER
     zle end-of-line
@@ -126,9 +118,10 @@ zle -N add_sudo
 bindkey "^s" add_sudo
 
 # Reset and clear screen
+# Alt + r
 function clearscr() {
     BUFFER="clear && reset"
     zle end-of-line
 }
 zle -N clearscr
-bindkey "^r" clearscr
+bindkey "^[r" clearscr
