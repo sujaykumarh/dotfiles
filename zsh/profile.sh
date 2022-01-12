@@ -1,54 +1,49 @@
-
-## Custom
-
 ####
-## PATH
+## Setup profile
 ####
-# Default
+
+
+# Setup PATH
+
+# setup default PATH
 export PATH="/bin"
 export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/games"
-# user
+
+# add user
 USER_BIN="$HOME/.local/bin"
 export PATH=$PATH:$USER_BIN
 
-####
-## Flutter
-####
+
+# add flutter to PATH if exists
 FLUTTER_SDK="$HOME/flutter-sdk/flutter/bin"
 if [[ -d $FLUTTER_SDK ]]; then
     export PATH=$PATH:$FLUTTER_SDK
 fi
 
-####
-## NodeJS
-####
+
+# add nodejs to PATH if exists
 NPM="$HOME/.npm-global/bin"
 if [[ -d $NPM ]]; then
     export PATH=$PATH:$NPM
 fi
 
-
-####
-## Composer
-####
+# add composer to PATH if exists
 COMPOSER_BIN="$HOME/.config/composer/vendor/bin"
 if [[ -d $COMPOSER_BIN ]]; then
     export PATH=$PATH:$COMPOSER_BIN
 fi
 
-####
-## Snap
-####
+
+# add snap to PATH if exists
 SNAP="/snap/bin"
 if [[ `which snap` != "snap not found" ]]; then
     export PATH=$PATH:$SNAP
 fi
 
-####
-## Ruby
-####
+ 
+# add ruby-gems to PATH if exists
 if [[ `which ruby` != "ruby not found" ]]; then
     ## Full version
     #RUBY_VER=`ruby -v | perl -ne '/[0-9]+\.[0-9]+\.[0-9]+/ && print $&'`
@@ -73,12 +68,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# enable zsh plugins
-# source $DOTFILES_DIR/zsh/plugins.sh
-
-# FZF
-# source $DOTFILES_DIR/modules/fzf/fzf.sh
-# source $DOTFILES_DIR/modules/fzf/custom.fzf-tab.sh
 
 ## Load custom aliases
 for _custom_alias in $DOTFILES_DIR/aliases/*.sh
@@ -86,9 +75,3 @@ do
 	# echo $_custom_alias
     source $_custom_alias
 done
-
-
-
-
-## Source prompt
-# source $DOTFILES_DIR/zsh/prompt.sh

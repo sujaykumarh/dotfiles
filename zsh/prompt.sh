@@ -1,4 +1,6 @@
-# Custom Dotfiles PROMPT
+#####
+## Setup prompt
+#####
 
 # prompt: git directory with changes
 #

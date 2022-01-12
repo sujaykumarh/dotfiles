@@ -1,4 +1,7 @@
-##
+#####
+## Setup Keybindings
+#####
+
 # ToDo: break this into a separate file for each keybinding for easier configuration and maintenance
 # ToDo: add a way to add customiziable defaults keybindings using env file
 # ToDo: add a way to customize the keybindings using local.env file
