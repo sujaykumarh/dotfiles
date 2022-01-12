@@ -25,15 +25,14 @@ source $OHMYZSH/oh-my-zsh.sh
 
 # load customizations
 source $DOTFILES_DIR/zsh/custom.sh
-
-# load additional plugins
-source $DOTFILES_DIR/zsh/plugins.sh
-
 # load profile
 source $DOTFILES_DIR/zsh/profile.sh
 
 # load prompt
 source $DOTFILES_DIR/zsh/prompt.sh
+
+# load additional plugins
+source $DOTFILES_DIR/zsh/plugins.sh
 
 # load modules
 source $DOTFILES_DIR/zsh/modules.sh

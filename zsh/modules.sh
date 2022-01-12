@@ -1,10 +1,13 @@
-####
+#####
 ## Setup modules
-####
-
-# TODO
+#####
 
 
-# FZF
-# source $DOTFILES_DIR/modules/fzf/fzf.sh
-# source $DOTFILES_DIR/modules/fzf/custom.fzf-tab.sh
+
+
+
+######
+## load modules config
+######
+
+source $DOTFILES_DIR/zsh/config/modules.sh
