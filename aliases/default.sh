@@ -20,12 +20,3 @@ alias v="vim -p"
 
 # GREP command
 alias grep="grep --color=always"
-
-
-# Custom cd
-cdls() {
-    #cd $1 && ls
-    builtin cd "$@" && ls;
-}
-alias cd="cdls"
-
