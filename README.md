@@ -5,7 +5,7 @@
 my `zsh` dotfiles, for all my workstations.
 
 
-[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-blue?logo=github&color=green)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE) [![wiki](https://img.shields.io/badge/Read-Wiki-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/wiki) [![GitHub issues](https://img.shields.io/github/issues/sujaykumarh/dotfiles?color=orange)](https://github.com/sujaykumarh/dotfiles/issues)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE) [![wiki](https://img.shields.io/badge/Read-Wiki-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/wiki) [![GitHub issues](https://img.shields.io/github/issues/sujaykumarh/dotfiles?color=orange)](https://github.com/sujaykumarh/dotfiles/issues)
 
 <p align="center">
 <sub> to get started clone </sub>

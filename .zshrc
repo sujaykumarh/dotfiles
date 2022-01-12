@@ -7,5 +7,5 @@ export DOTFILES_DIR=$DOTFILES_DIR
 echo "Updating git modules"
 (cd $DOTFILES_DIR && git submodule update --init --recursive && reset)
 
-# use zshrc
+# load zshrc
 source $DOTFILES_DIR/zsh/zshrc.sh
