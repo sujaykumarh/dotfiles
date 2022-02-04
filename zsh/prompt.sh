@@ -85,9 +85,9 @@ prompt_git() {
     
     # if project is new
     if [ $(git branch --list | wc -l) -lt 1 ]; then
-      _branch_name="🌱 %{$bg[black]%}%{$fg[white]%}"
+      _branch_name="🌱 %{$fg[white]%}"
     else
-      _branch_name="🌿 %{$bg[black]%}%{$fg[white]%}$(git rev-parse --abbrev-ref HEAD)"
+      _branch_name="🌿 %{$fg[white]%}$(git rev-parse --abbrev-ref HEAD)"
     fi
 
     # Display git info
