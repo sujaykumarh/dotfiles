@@ -10,6 +10,7 @@ zstyle ':fzf-tab:complete:(-parameter-|-brace-parameter-|export|unset|expand):*'
 
 # system commands
 zstyle ':fzf-tab:complete:(cat|nano|vi):*' fzf-preview '[[ -f $realpath ]] && head -n 200 $realpath || tree -C $realpath'
+zstyle ':fzf-tab:complete:(tac):*' fzf-preview '[[ -f $realpath ]] && tac $realpath | head -n 200 || tree -C $realpath'
 zstyle ':fzf-tab:complete:(cd|ls):*' fzf-preview '[[ -d $realpath ]] && tree -C $realpath || echo "is a file"'
 zstyle ':fzf-tab:complete:(finfo):*' fzf-preview '[[ -f $realpath ]] && echo -e "is a file\n" && ls -l --color=always $realpath && echo -e "\n" || echo -e "is a directory\n";stat $realpath'
 zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
