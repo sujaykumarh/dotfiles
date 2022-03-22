@@ -60,10 +60,8 @@ All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh
 
 branch |  | description
 --- | --- | ---
-main | ✅ stable | stable branch
+main | ⚠️ stable | stable branch
 dev | 🛠️ WIP | active development
-fix | 🔥 fix | pull requests, fixes etc..
-
 
 <br>
 
@@ -71,9 +69,11 @@ fix | 🔥 fix | pull requests, fixes etc..
 
 all modules available for config.
 
-plugin | available | tested | working | 
------- | --------- | ------ | ------- |
-fzf     | ☑️ | ☑️ | ☑️ |
+plugin | available | tested | working | usage |
+------ | --------- | ------ | ------- | ----- |
+fzf     | ☑️ | ☑️ | ☑️ | autocomplete, fuzzy search & more..
+fzf-tab | ☑️ | ☑️ | ☑️ | autocomplete commands & more..
+[goto](https://github.com/iridakos/goto) | ☑️ | ☑️ | ☑️ | jump to dir aliases
 vim     | ⬛ | ⬛ | ⬛ |
 tmux    | ⬛ | ⬛ | ⬛ |
 <!-- tmux    | ☑️ | ⬛ | ⬛ | -->
@@ -91,8 +91,8 @@ OS | Supported | Tested | description
 ArchLinux       | ☑️ | ☑️ | working and tested
 Ubuntu          | ☑️ | ☑️ | working and tested on v20.04+
 Unix            | ☑️ | ⬛ | should work else create issue
-MacOS           | ⬛ | ❌ | not tested should probably work else create issue or pr for support
-Windows         | ❌ | ❌ | no plan to support as of now create pr to add support
+MacOS           | ⬛ | ❌ | create issue or pr for support <br><sub>should probably work</sub> 
+Windows         | ❌ | ❌ | create pr to add support <br><sub>no plan to support</sub> 
 
 <sub>☑️ working, ⬛ no-status, ❌ not-supported</sub>
 
