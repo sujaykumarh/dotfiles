@@ -8,7 +8,9 @@
 
 <div align="center">
 
-# <img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/windowsterminal.svg" height="20"> dotfiles
+<img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/icon.svg" height="64">
+
+# dotfiles
 
 my `zsh` dotfiles, for all my workstations. 
 
