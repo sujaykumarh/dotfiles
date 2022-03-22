@@ -2,6 +2,11 @@
 ## Setup prompt
 #####
 
+# prompt: node app directory with changes
+#
+# user@host [ ~/path/to/node-app ] 🌿 main 📦 v1.0.0
+#  ➜ 
+
 # prompt: git directory with changes
 #
 # user@host [ ~/path/to/dir ] 🌿 main               ⏳ +1
@@ -93,6 +98,42 @@ prompt_git() {
     # Display git info
     echo -n -e " ${_branch_name}"
   fi
+
+  # add Git tag
+  prompt_git_tag
+}
+
+
+# Prompt: git tag on current commit
+prompt_git_tag(){
+  # Return if git is not installed
+  (( $+commands[git] )) || return
+
+  # Return if not in a git folder
+  if [[ -z "$(git rev-parse --is-inside-work-tree 2>/dev/null)" ]]; then
+    return
+  fi
+
+  # return if no commits
+  if [ $(git branch --list | wc -l) -lt 1 ]; then
+    return
+  fi
+
+  # return if no tags
+  if [[ -z "$(git describe --exact-match --tags $(git log -n1 --pretty='%h') 2&>/dev/null)" ]]; then
+    return
+  fi
+
+  echo -n -e " 🏷️ $(git describe --exact-match --tags $(git log -n1 --pretty='%h') 2&>/dev/null) "
+}
+
+# Package Version (if available)
+prompt_package(){
+  # Currently only works for npm
+  if [[ -z "$(command -v jq)" ||  ! -f "package.json" ]]; then
+    return
+  fi
+  echo -n -e " 📦 v$(jq -r '.version' package.json)"
 }
 
 # End
@@ -109,6 +150,7 @@ build_prompt() {
   prompt_sudo
   prompt_dir
   prompt_git
+  prompt_package
   prompt_end
 }
 
