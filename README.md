@@ -50,7 +50,7 @@ my `zsh` dotfiles, for all my workstations.
 
 **📝 Contributing**
 
-All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/dotfiles/blob/main/.github/CONTRIBUTING.md).
+All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/.github/blob/main/.github/CONTRIBUTING.md).
 
 <br>
 
