@@ -1,5 +1,5 @@
 #####
-## dotfiles setup script
+## dotfiles interactive setup script
 #####
 
 # ########################################################################
