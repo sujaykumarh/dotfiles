@@ -7,6 +7,13 @@ if [[ `which docker` == "docker not found" ]]; then
     return
 fi
 
+_dkFlushUnused(){
+    # remove unused containers
+    docker rm $(docker ps -a -q)
+    # remove untagged images
+    docker rmi $(docker images -q --filter "dangling=true")
+}
+
 ## Docker
 alias dk="docker"   # short for docker
 alias dkpull="docker pull"   # short for Pull Docker image
@@ -14,8 +21,9 @@ alias dkpull="docker pull"   # short for Pull Docker image
 ## Images
 alias dki="docker images" # Docker images list
 alias dkrmi="docker rmi" # short for docker remove image
-alias dkflush="docker rm `docker ps --no-trunc -aq`" # flush remove all images
-alias dkflush2="docker rmi $(docker images --filter "dangling=true" -q --no-trunc)" # flush remove all images dangling
+alias dkflush=_dkFlushUnused # flush unused containers and images
+# alias dkflush="docker rm `docker ps --no-trunc -aq`" # flush remove all images
+# alias dkflush2="docker rmi $(docker images --filter "dangling=true" -q --no-trunc)" # flush remove all images dangling
 
 ## Process
 alias dkps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
