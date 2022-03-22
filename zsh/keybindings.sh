@@ -83,6 +83,17 @@ function goto_home() {
 zle -N goto_home
 bindkey "^[^h" goto_home
 
+
+# thefuck shortcut
+# ctrl + f
+function thefuck_key() {
+    (( $+commands[thefuck] )) || return
+    BUFFER="fuck"
+    zle accept-line
+}
+zle -N thefuck_key
+bindkey "^f" thefuck_key
+
 # Edit and rerun
 # function edit_and_run() {
 #     BUFFER="fc"
