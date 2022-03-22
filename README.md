@@ -48,11 +48,44 @@ my `zsh` dotfiles, for all my workstations.
 
 <br>
 
-**📝 Contributing**
+## ⚠️ DISCLAIMER
+
+**the security of your systems is YOUR responsibility**. Be careful when using setup scripts. **`setup-unattended.sh` does lot actions unattended**  read the script before running it.
+
+This project was created for personal use. Use it at your own risk.
+
+<br>
+
+## 🎮 Demo
+
+run docker image
+
+```bash
+# ToDo
+$ docker run --rm -it sujaykumarh/dotfiles
+
+# list files
+$ ls
+
+# checkout demos folder
+$ cd demos
+```
+
+<br>
+
+## 🔧 Installation, 🚀 Usage, 🔨 Configuration, etc.
+
+read 👉 [Wiki](https://github.com/sujaykumarh/dotfiles/wiki)
+
+<br>
+
+## 📝 Contributing
 
 All Contributions are welcome, see [CONTRIBUTING](https://github.com/sujaykumarh/.github/blob/main/.github/CONTRIBUTING.md).
 
 <br>
+
+## ℹ️ Other Info
 
 **⚖️ Stability**
 
@@ -98,7 +131,7 @@ Windows         | ❌ | ❌ | create pr to add support <br><sub>no plan to suppo
 
 <br>
 
-**📄 LICENSE**
+## 📄 LICENSE
 
 ```license
 The MIT License (MIT)
@@ -113,15 +146,16 @@ for [additional LICENSEs](https://github.com/sujaykumarh/dotfiles/blob/dev/addit
 
 <br>
 
-<!-- 
+
 
 **📅 Changelog**
 
-Read [CHANGELOG.md](CHANGELOG.md)
+<!-- TODO: add -->
+Read [CHANGELOG.md](#)
+<!-- Read [CHANGELOG.md](CHANGELOG.md) -->
 
-<br> 
-
--->
+<br>
+<br>
 
 **😀 Inspiration**
 
@@ -131,9 +165,16 @@ Originally inspired by [parth/dotfiles](https://github.com/Parth/dotfiles) and o
 
 <sub>
 
+<div align="center">
+
 **🔋 powered by**
 
-[![](https://img.shields.io/badge/zsh-shell-blue.svg?style=flat-square)](https://en.wikipedia.org/wiki/Z_shell)  [![](https://img.shields.io/badge/oh--my--zsh-&%20plugins-blue.svg?style=flat-square)](https://ohmyz.sh/) [![](https://img.shields.io/badge/setup-nodejs-brightgreen.svg?style=flat-square)](https://nodejs.org) [![](https://img.shields.io/badge/package-fzf-fe17a2.svg?style=flat-square)](https://github.com/junegunn/fzf) 
+<br>
 
-[![](https://img.shields.io/badge/gitmoji-😀-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+[![](https://img.shields.io/badge/zsh-shell-blue.svg?style=flat-square)](https://en.wikipedia.org/wiki/Z_shell)  [![](https://img.shields.io/badge/oh--my--zsh-&%20plugins-blue.svg?style=flat-square)](https://ohmyz.sh/) [![](https://img.shields.io/badge/package-fzf-fe17a2.svg?style=flat-square)](https://github.com/junegunn/fzf) [![](https://img.shields.io/badge/gitmoji-😀-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+
+<!-- [![](https://img.shields.io/badge/setup-nodejs-brightgreen.svg?style=flat-square)](https://nodejs.org) -->
+
 </sub>
+
+</div>
