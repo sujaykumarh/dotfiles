@@ -1,0 +1,22 @@
+name: delete-untagged
+
+# trigger events
+on:
+  # Manual
+  workflow_dispatch:
+
+  # automatic every month on 2nd day on 04:20
+  schedule:
+    - cron: '20 4 2 * *'
+
+jobs:
+  delete-untagged:
+    name: delete-untagged
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🗑️ Purge untagged packages from ghcr
+        uses: dylanratcliffe/delete-untagged-containers@main
+        with:
+          package_name: dotfiles
+          user: sujaykumarh
+          token: ${{ secrets.GITHUB_TOKEN }}

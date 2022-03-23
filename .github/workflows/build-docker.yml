@@ -1,0 +1,104 @@
+# Workflow to build and push docker images
+# .github/workflows/docker.yml
+name: docker
+
+on:
+  # manual
+  workflow_dispatch:
+  
+  # automatic
+  push:
+    branches:
+      - main
+      - dev
+    paths-ignore:
+      - ".github/**"
+      - "custom/**"
+      - "**.md"
+      - "**.txt"
+      - "setup**.sh"
+      - "LICENSE*"
+      - "backup/**"
+
+# Env
+env:
+  imgTag: latest
+  imgName: sujaykumarh/dotfiles
+
+
+jobs:
+  build-push:
+    name: build-docker
+    runs-on: ubuntu-latest
+    steps:
+      ## Pull Source Code
+      - name: 📥 Pull source code
+        uses: actions/checkout@v2
+
+      # Set up QEMU env
+      - name: 🔨 Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      # Set up Docker for Buildx env
+      - name: 🔨 Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - run: echo BUILD_INFO="$(date +%s)" >> $GITHUB_ENV
+      - run: echo BUILD_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+
+      ## Prepare env
+      - name: 📦 Prepare env
+        id:   prep
+        run: |
+          DKHUB_IMAGE=${{ env.imgName }}
+          GHCR_IMAGE="ghcr.io/${{ env.imgName }}"
+
+          VERSION=${{ env.imgTag }}
+
+          if [[ "${{github.base_ref}}" == "dev" || "${{github.ref}}" == "refs/heads/dev" ]]; then
+            VERSION="${{ VERSION }}-dev"
+          fi
+
+          DK_TAGS="${DKHUB_IMAGE}:${{ VERSION }}"
+          GH_TAGS="${GHCR_IMAGE}:${{ VERSION }}"
+
+          TAGS="${DK_TAGS},${GH_TAGS}"
+
+          echo ::set-output name=version::${{ VERSION }}
+          echo ::set-output name=tags::${TAGS}
+          DESC="${{ github.event.repository.description }} tag: ${{ VERSION }} Build: ${{ env.BUILD_DATE }}"
+          echo ::set-output name=desc::${DESC}
+
+      ## Login
+      # - name: 🔐 Login to DockerHub
+      #   uses: docker/login-action@v1
+      #   with:
+      #     username: ${{ secrets.dockerHubUsername }}
+      #     password: ${{ secrets.dockerHubPassword }}
+
+      - name: 🔐 Login to GHCR
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Build & Publish Docker Images
+      - name: ⛏️ 🐳 Build and 🚀 Push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: ./${{ env.dkPath }}
+          file: ./${{ env.dkPath }}/${{ env.dkFile }}
+          platforms: linux/amd64,linux/arm64,linux/arm
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.prep.outputs.tags }}
+          labels: |
+            org.opencontainers.image.title=${{ github.event.repository.name }}
+            org.opencontainers.image.url=${{ github.event.repository.html_url }}
+            org.opencontainers.image.source=${{ github.event.repository.clone_url }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+            org.opencontainers.image.created=${{ env.BUILD_DATE }}
+            org.opencontainers.image.revision=${{ github.sha }}
+            org.opencontainers.image.licenses=${{ github.event.repository.license.spdx_id }}
+            org.opencontainers.image.description=${{ steps.prep.outputs.desc }}
