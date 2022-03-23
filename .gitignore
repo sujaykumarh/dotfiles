@@ -100,3 +100,8 @@ tmp
 #############
 ## Custom config
 #############
+
+## for dotfiles
+/local.env
+/_
+/__
