@@ -53,20 +53,19 @@ jobs:
           DKHUB_IMAGE=${{ env.imgName }}
           GHCR_IMAGE="ghcr.io/${{ env.imgName }}"
 
-          VERSION=${{ env.imgTag }}
-
+          VERSION="${{ env.imgTag }}"
           if [[ "${{github.base_ref}}" == "dev" || "${{github.ref}}" == "refs/heads/dev" ]]; then
-            VERSION="${{ VERSION }}-dev"
+            VERSION="${VERSION}-dev"
           fi
 
-          DK_TAGS="${DKHUB_IMAGE}:${{ VERSION }}"
-          GH_TAGS="${GHCR_IMAGE}:${{ VERSION }}"
+          DK_TAGS="${DKHUB_IMAGE}:${VERSION}"
+          GH_TAGS="${GHCR_IMAGE}:${VERSION}"
 
           TAGS="${DK_TAGS},${GH_TAGS}"
 
-          echo ::set-output name=version::${{ VERSION }}
+          echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
-          DESC="${{ github.event.repository.description }} tag: ${{ VERSION }} Build: ${{ env.BUILD_DATE }}"
+          DESC="${{ github.event.repository.description }} tag: ${VERSION} Build: ${{ env.BUILD_DATE }}"
           echo ::set-output name=desc::${DESC}
 
       ## Login
