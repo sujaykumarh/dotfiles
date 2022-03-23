@@ -1,4 +1,7 @@
-## Download this template at https://gist.github.com/Sujaykumarh/9969846612a7504c4aadb677276d3a53
+## .gitignore file is Created by @sujaykumarh/start v0.0.4 
+## Source https://github.com/sujaykumarh/start 
+
+## default gitignore file
 ##
 ## Combinined GitHub's https://github.com/github/gitignore
 ##
@@ -81,10 +84,19 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+## common software defaults
+node_modules
+vendor
+bower_components
+coverage
+logs
+tmp
 
-## Custom config
+
+# common default
 !.gitkeep
 .env
 
-local.env
-git.cfg
+#############
+## Custom config
+#############
