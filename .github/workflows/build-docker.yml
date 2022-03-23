@@ -50,7 +50,6 @@ jobs:
       - name: 📦 Prepare env
         id:   prep
         run: |
-          DKHUB_IMAGE=${{ env.imgName }}
           GHCR_IMAGE="ghcr.io/${{ env.imgName }}"
 
           VERSION="${{ env.imgTag }}"
@@ -58,22 +57,13 @@ jobs:
             VERSION="${VERSION}-dev"
           fi
 
-          DK_TAGS="${DKHUB_IMAGE}:${VERSION}"
           GH_TAGS="${GHCR_IMAGE}:${VERSION}"
-
-          TAGS="${DK_TAGS},${GH_TAGS}"
+          TAGS="${GH_TAGS}"
 
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
           DESC="${{ github.event.repository.description }} tag: ${VERSION} Build: ${{ env.BUILD_DATE }}"
           echo ::set-output name=desc::${DESC}
-
-      ## Login
-      # - name: 🔐 Login to DockerHub
-      #   uses: docker/login-action@v1
-      #   with:
-      #     username: ${{ secrets.dockerHubUsername }}
-      #     password: ${{ secrets.dockerHubPassword }}
 
       - name: 🔐 Login to GHCR
         uses: docker/login-action@v1
