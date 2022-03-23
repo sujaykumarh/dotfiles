@@ -10,4 +10,4 @@
 ## load modules config
 ######
 
-source $DOTFILES_DIR/zsh/config/modules.sh
+source $DOTFILES_DIR/config/modules.sh
