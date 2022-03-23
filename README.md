@@ -25,7 +25,6 @@ my `zsh` dotfiles, for all my workstations.
 
 **powered by** `zsh` with [oh-my-zsh](https://ohmyz.sh/) and more..
 
-</div>
 
 <!-- **default 🌿**: `dev` -->
 
@@ -41,10 +40,11 @@ my `zsh` dotfiles, for all my workstations.
 
 <br>
 
-**📷 Screenshot**
+[![demo](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/demo.gif)](#)
 
 [![screenshot](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss.png)](#)
 
+</div>
 
 <br>
 
