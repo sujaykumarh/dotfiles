@@ -54,7 +54,7 @@ jobs:
 
           VERSION="${{ env.imgTag }}"
           if [[ "${{github.base_ref}}" == "dev" || "${{github.ref}}" == "refs/heads/dev" ]]; then
-            VERSION="${VERSION}-dev"
+            VERSION="dev"
           fi
 
           GH_TAGS="${GHCR_IMAGE}:${VERSION}"
