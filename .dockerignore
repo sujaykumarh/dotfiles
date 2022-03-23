@@ -1,4 +1,6 @@
 _
 .git
 .github
-zsh/plugins/*
+backup/**
+zsh/plugins/**
+local.env
