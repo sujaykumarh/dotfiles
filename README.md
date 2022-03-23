@@ -61,8 +61,11 @@ This project was created for personal use. Use it at your own risk.
 run docker image
 
 ```bash
-# ToDo
-$ docker run --rm -it sujaykumarh/dotfiles
+# pull docker image TAG=latest, dev
+$ docker pull ghcr.io/sujaykumarh/dotfiles:<TAG>
+
+# Run docker container
+$ docker run --rm -it ghcr.io/sujaykumarh/dotfiles:<TAG>
 
 # list files
 $ ls
