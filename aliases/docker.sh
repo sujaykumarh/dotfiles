@@ -75,8 +75,7 @@ if [[ `which docker-compose` == "docker-compose not found" ]]; then
     alias docker-compose="$DOCKER_COMPOSE_BIN"
 else
     # use docker-compose binary
-    echo -e "\n\ndocker-compose v1 is being deprecated, please use docker-compose v2\n\n"
-    DOCKER_COMPOSE_BIN='docker-compose'
+    DOCKER_COMPOSE_BIN='echo -e "\n\ndocker-compose v1 is being deprecated, please use docker-compose v2\n\n"; docker-compose'
 fi
 
 ## Short for docker compose
