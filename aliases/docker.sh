@@ -70,7 +70,12 @@ alias dmx="docker-machine ssh"
 DOCKER_COMPOSE_BIN='docker compose'
 
 # check if docker-compose is installed else
-if [[ `which docker-compose` != "docker-compose not found" ]]; then
+if [[ `which docker-compose` == "docker-compose not found" ]]; then
+    # alias docker-compose to use docker compose
+    alias docker-compose="$DOCKER_COMPOSE_BIN"
+else
+    # use docker-compose binary
+    echo -e "\n\ndocker-compose v1 is being deprecated, please use docker-compose v2\n\n"
     DOCKER_COMPOSE_BIN='docker-compose'
 fi
 
