@@ -66,23 +66,31 @@ alias dmx="docker-machine ssh"
 # https://docs.docker.com/compose/install/
 ##
 
+# support for docker compose v2 cli to use docker compose insted of docker-compose
+DOCKER_COMPOSE_BIN='docker compose'
+
+# check if docker-compose is installed else
+if [[ `which docker-compose` != "docker-compose not found" ]]; then
+    DOCKER_COMPOSE_BIN='docker-compose'
+fi
+
 ## Short for docker compose
-alias dcr="docker-compose"
+alias dcr="${DOCKER_COMPOSE_BIN}"
 
 ## Docker Compose build
-alias dcrbuild="docker-compose build"
+alias dcrbuild="${DOCKER_COMPOSE_BIN} build"
 
 ## Docker Compose Build run in detach mode pull container up
-alias dcrbuildrun="docker-compose up -d --build"
+alias dcrbuildrun="${DOCKER_COMPOSE_BIN} up -d --build"
 
 ## Docker Compose RUN Container
-alias dcrun="docker-compose run"
+alias dcrun="${DOCKER_COMPOSE_BIN} run"
 
 ## Docker Compose RUN and remove Container
-alias dcrunrm="docker-compose run --rm"
+alias dcrunrm="${DOCKER_COMPOSE_BIN} run --rm"
 
 ## Docker Compose template
-# alias dcr="docker-compose"
+# alias dcr="${DOCKER_COMPOSE_BIN}"
 
 
 ##################################
