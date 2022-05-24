@@ -9,9 +9,9 @@ fi
 
 _dkFlushUnused(){
     # remove unused containers
-    docker rm $(docker ps -a -q)
+    [ -z $(docker ps -a -q) ] && echo "no unused containers were found!" || docker rm $(docker ps -a -q)
     # remove untagged images
-    docker rmi $(docker images -q --filter "dangling=true")
+    [ -z $(docker images -q --filter "dangling=true") ] && echo "no untagged images were found!" || docker rmi $(docker images -q --filter "dangling=true")
 }
 
 ## Docker
@@ -32,7 +32,7 @@ alias dkps-default="docker ps"
 alias dkpsl="docker ps -a"
 
 alias dkps-kill="docker kill"
-alias dkps-killall="docker kill $(docker container ls -q)"
+alias dkps-killall="[ -z $(docker container ls -q) ] && echo no containers to kill || docker stop $(docker container ls -q)"
 
 ## Service
 alias dks="docker service"
@@ -43,7 +43,8 @@ alias dklf="docker logs -f" # docker logs follow
 
 ## Containers
 alias dkrm="docker rm" # short for docker remove
-alias dkexe="docker exec -it $1 $2"
+alias dkexe="docker exec"
+alias dkexeit="docker exec -it"
 
 ## RUNN Containers
 alias dkr="docker run" # Docker run container
