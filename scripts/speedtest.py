@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# last updated : 17 July 2021
+# last updated  : 17 July 2021
+# source        : https://github.com/sivel/speedtest-cli
 
 # -*- coding: utf-8 -*-
 # Copyright 2012 Matt Martz
