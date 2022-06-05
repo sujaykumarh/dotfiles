@@ -1,46 +1,26 @@
-**Note**
-
-
-**dotfiles is currently in process of being re-imagined with all new architecture. checkout `main` branch for stable implementation before restructure or please wait untill this text is removed from default branch**
-
-<br>
-<br>
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/icon.svg" height="64">
 
 # dotfiles
 
-my `zsh` dotfiles, for all my workstations. 
+personal `zsh` dotfiles
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE) [![wiki](https://img.shields.io/badge/Read-Wiki-blue?logo=github&color=blue)](https://github.com/sujaykumarh/dotfiles/wiki) [![GitHub issues](https://img.shields.io/github/issues/sujaykumarh/dotfiles?color=orange)](https://github.com/sujaykumarh/dotfiles/issues)
 
 <p align="center">
 <sub> to get started clone </sub>
 <br>
-<!-- ToDo replace with setup script -->
-<h3>git clone https://github.com/sujaykumarh/dotfiles.git</h3>
+
+```bash
+git clone https://github.com/sujaykumarh/dotfiles.git
+```
+
 </p>
 
 **powered by** `zsh` with [oh-my-zsh](https://ohmyz.sh/) and more..
 
-
-<!-- **default 🌿**: `dev` -->
-
-<!--
-
-**setup**
-
-```bash
-# ToDo replace with setup script
-```
-
--->
-
 <br>
-
-[![demo](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/demo.gif)](#)
 
 [![screenshot](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/ss.png)](#)
 
@@ -57,6 +37,8 @@ This project was created for personal use. Use it at your own risk.
 <br>
 
 ## 🎮 Demo
+
+[![demo](https://raw.githubusercontent.com/sujaykumarh/dotfiles/dev/.github/media/demo.gif)](#)
 
 run docker image
 
@@ -134,45 +116,30 @@ Windows         | ❌ | ❌ | create pr to add support <br><sub>no plan to suppo
 
 <br>
 
-## 📄 LICENSE
+<div align="center">
 
-```license
-The MIT License (MIT)
+### 📄 LICENSE
 
-Copyright (c) 2022 Sujaykumar.Hublikar <hello@sujaykumarh.com>
-```
+[MIT](https://github.com/sujaykumarh/dotfiles/blob/main/LICENSE) © 2022 [sujaykumarh](https://github.com/sujaykumarh) 
 
-Read full license [here](https://github.com/sujaykumarh/dotfiles/blob/dev/LICENSE)
-
-for [additional LICENSEs](https://github.com/sujaykumarh/dotfiles/blob/dev/additional-licenses.txt)
+for additional licenses read the [additional-licenses.txt](https://github.com/sujaykumarh/dotfiles/blob/dev/additional-licenses.txt) file.
 
 
+<!-- 
 <br>
-
-
 
 **📅 Changelog**
 
-<!-- TODO: add -->
-Read [CHANGELOG.md](#)
-<!-- Read [CHANGELOG.md](CHANGELOG.md) -->
+Read [CHANGELOG.md](CHANGELOG.md) 
+-->
 
 <br>
-<br>
-
-**😀 Inspiration**
-
-Originally inspired by [parth/dotfiles](https://github.com/Parth/dotfiles) and other OpenSource github repos on [dotfiles ](https://github.com/topics/dotfiles)
-
 <br>
 
 <sub>
 
-<div align="center">
 
 **🔋 powered by**
-
-<br>
 
 [![](https://img.shields.io/badge/zsh-shell-blue.svg?style=flat-square)](https://en.wikipedia.org/wiki/Z_shell)  [![](https://img.shields.io/badge/oh--my--zsh-&%20plugins-blue.svg?style=flat-square)](https://ohmyz.sh/) [![](https://img.shields.io/badge/package-fzf-fe17a2.svg?style=flat-square)](https://github.com/junegunn/fzf) [![](https://img.shields.io/badge/gitmoji-😀-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
 
