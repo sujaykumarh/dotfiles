@@ -2,12 +2,12 @@
 ## VS Code Aliases
 #########
 
-_vscode(){
-    if [[ `which code` == "code not found" ]]; then
-        echo "vs-code was not found! Please install code"
-        return
-    fi
+# return if code is not installed
+if [[ `which code` == "code not found" ]]; then
+    return
+fi
 
+_vscode(){
     VSCODE=`whereis code | cut -d " " -f2`
     CURDIR=`pwd`
 

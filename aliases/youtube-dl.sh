@@ -3,13 +3,10 @@
 #   url: https://youtube-dl.org/
 #   source: https://github.com/ytdl-org/youtube-dl/
 
-_ytdl(){
-    if [[ `which youtube-dl` == "youtube-dl not found" ]]; then
-        echo "youtube-dl was not found! Please install youtube-dl"
-        return
-    fi
-    noglob youtube-dl $@
-}
+# return if youtube-dl is not installed
+if [[ `which youtube-dl` == "youtube-dl not found" ]]; then
+    return
+fi
 
 _ytdlAudio() {
     if [ $# -eq 0 ];
@@ -20,11 +17,11 @@ _ytdlAudio() {
     fi
     
     #echo "$@"
-    _ytdl -f 140 "$@"
+    youtube-dl -f 140 "$@"
 }
 
-# alias youtube-dl='noglob youtube-dl' # fix for youtube-dl
-alias youtube-dl='_ytdl'
-alias ytdl='_ytdl'
+alias youtube-dl='noglob youtube-dl'
 alias youtube-dl-audio='noglob _ytdlAudio' # fix for youtube-dl
-alias ytdl-audio='youtube-dl-audio'
+
+alias ytdl='noglob youtube-dl'
+alias ytdl-audio='noglob _ytdlAudio'

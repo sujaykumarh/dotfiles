@@ -3,11 +3,12 @@
 #   source  : https://github.com/sivel/speedtest-cli
 #   path    : $DOTFILES_DIR/scripts/speedtest.py
 
+if [[ `which python` == "python not found" ]]; then
+    # echo "Python not found! Please install python"
+    return
+fi
+
 _speedtest(){
-    if [[ `which python` == "python not found" ]]; then
-        echo "Python not found! Please install python"
-        return
-    fi
 
     echo "Running speed tester."
     echo ""

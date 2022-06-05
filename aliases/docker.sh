@@ -9,9 +9,9 @@ fi
 
 _dkFlushUnused(){
     # remove unused containers
-    docker rm $(docker ps -a -q)
+    [ -z $(docker ps -a -q) ] && echo "no unused containers were found!" || docker rm $(docker ps -a -q)
     # remove untagged images
-    docker rmi $(docker images -q --filter "dangling=true")
+    [ -z $(docker images -q --filter "dangling=true") ] && echo "no untagged images were found!" || docker rmi $(docker images -q --filter "dangling=true")
 }
 
 ## Docker
@@ -32,7 +32,7 @@ alias dkps-default="docker ps"
 alias dkpsl="docker ps -a"
 
 alias dkps-kill="docker kill"
-alias dkps-killall="docker kill $(docker container ls -q)"
+alias dkps-killall="[ -z $(docker container ls -q) ] && echo no containers to kill || docker stop $(docker container ls -q)"
 
 ## Service
 alias dks="docker service"
@@ -43,7 +43,8 @@ alias dklf="docker logs -f" # docker logs follow
 
 ## Containers
 alias dkrm="docker rm" # short for docker remove
-alias dkexe="docker exec -it $1 $2"
+alias dkexe="docker exec"
+alias dkexeit="docker exec -it"
 
 ## RUNN Containers
 alias dkr="docker run" # Docker run container
@@ -66,23 +67,35 @@ alias dmx="docker-machine ssh"
 # https://docs.docker.com/compose/install/
 ##
 
+# support for docker compose v2 cli to use docker compose insted of docker-compose
+DOCKER_COMPOSE_BIN='docker compose'
+
+# check if docker-compose is installed else
+if [[ `which docker-compose` == "docker-compose not found" ]]; then
+    # alias docker-compose to use docker compose
+    alias docker-compose="$DOCKER_COMPOSE_BIN"
+else
+    # use docker-compose binary
+    DOCKER_COMPOSE_BIN='echo -e "\n\ndocker-compose v1 is being deprecated, please use docker-compose v2\n\n"; docker-compose'
+fi
+
 ## Short for docker compose
-alias dcr="docker-compose"
+alias dcr="${DOCKER_COMPOSE_BIN}"
 
 ## Docker Compose build
-alias dcrbuild="docker-compose build"
+alias dcrbuild="${DOCKER_COMPOSE_BIN} build"
 
 ## Docker Compose Build run in detach mode pull container up
-alias dcrbuildrun="docker-compose up -d --build"
+alias dcrbuildrun="${DOCKER_COMPOSE_BIN} up -d --build"
 
 ## Docker Compose RUN Container
-alias dcrun="docker-compose run"
+alias dcrun="${DOCKER_COMPOSE_BIN} run"
 
 ## Docker Compose RUN and remove Container
-alias dcrunrm="docker-compose run --rm"
+alias dcrunrm="${DOCKER_COMPOSE_BIN} run --rm"
 
 ## Docker Compose template
-# alias dcr="docker-compose"
+# alias dcr="${DOCKER_COMPOSE_BIN}"
 
 
 ##################################
@@ -91,6 +104,7 @@ alias dcrunrm="docker-compose run --rm"
 alias docker-cleanup="sh $DOTFILES_DIR/scripts/cleanup-docker.sh"
 alias docker-cleanUntagged='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 
-# CURRENT_UID is used for docker user mount
-# CURRENT_UID=$(id -u):$(id -g)
-export CURRENT_UID="$(id -u):$(id -g)"
+# CURRENT_USER is used for docker user mount
+export CURRENT_UID="$(id -u)"
+export CURRENT_GID="$(id -g)"
+export CURRENT_USER="$(id -u):$(id -g)"

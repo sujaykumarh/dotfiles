@@ -1,9 +1,18 @@
+#########
+## pip upgrade
+#########
+
+if [[ `which python` == "python not found" ]]; then
+    # echo "Python not found! Please install python"
+    return
+fi
+
+if [[ `which pip` == "pip not found" ]]; then
+    # echo "pip not found! Please install pip"
+    return
+fi
 
 _pipUpgrade(){
-    if [[ `which python` == "python not found" ]]; then
-        echo "Python not found! Please install python"
-        return
-    fi
     
     echo ""
     # local cmd='python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1'
@@ -55,4 +64,4 @@ _pipUpgrade(){
     fi
 }
 
-alias pip-upgrade=_pipUpgrade
+alias update-pip-pkgs=_pipUpgrade

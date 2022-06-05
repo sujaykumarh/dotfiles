@@ -116,8 +116,3 @@ Major.io for https://icanhazip.com/ project
     article: https://major.io/2021/06/06/a-new-future-for-icanhazip/
     faq: https://major.io/icanhazip-com-faq/
     source: https://github.com/major
-
-
-Dutchcoders for transfer.sh project
-    source: https://github.com/dutchcoders/transfer.sh
-    url: https://transfer.sh

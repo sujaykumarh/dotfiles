@@ -24,13 +24,18 @@ import socket
 
 # App Name
 _appName = "WhatsMyIp"
+
 # App Name
 _appDesc = "WhatsMyIp Find out your ip and hostname\nUse -h to find how to use"
+
 # App Version
-_appVer = "0.0.1"   
+_appVer = "0.0.2"
+
+# External IP URL
+_url = "https://icanhazip.com/"
 
 def externalIp():
-    _externalIp = urllib.request.urlopen('https://icanhazip.com/').read().decode('utf-8').rstrip().strip()
+    _externalIp = urllib.request.urlopen(_url).read().decode('utf-8').rstrip().strip()
     # print(_externalIp)
     print("External Ip  : ", _externalIp)
 
