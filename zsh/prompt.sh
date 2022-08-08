@@ -192,8 +192,8 @@ build_rprompt() {
   git_info
 }
 
-RPROMPT='%{$_lineup%}% $(build_rprompt) %{$_linedown%}%{$reset_color%}%'
-
+# temporarily disable rprompt for vs code #31
+[[ "$TERM_PROGRAM" != "vscode" ]] && RPROMPT='%{$_lineup%}% $(build_rprompt) %{$_linedown%}% %{$reset_color%}%'
 
 # TODO: Breaks highlighting or fzf or autocomplete
 ####
