@@ -71,8 +71,8 @@ askYN docker system prune
 echo "Pruning Docker Networks [docker network prune]"
 askYN docker network prune
 
-echo "Pruning Docker Volumes [docker volume prune]"
-askYN docker volume prune
+echo "Pruning Docker Volumes and Removing unused volumes"
+askYN docker volume prune; [[ ! -z $(docker volume ls -q -f "dangling=true") ]] && docker volume rm $(docker volume ls -q -f "dangling=true")
 
 
 ## Remove unused images
