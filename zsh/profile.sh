@@ -19,6 +19,18 @@ USER_BIN="$HOME/.local/bin"
 export PATH=$PATH:$USER_BIN
 
 
+# # add cuda to PATH if exists
+# CUDA_BIN="/opt/cuda/bin"
+# if [[ -d $CUDA_BIN ]]; then
+#     export PATH=$PATH:$CUDA_BIN
+# fi
+
+# # add miniconda to PATH if exists
+# MINICONDA="$HOME/miniconda3/bin"
+# if [[ -d $MINICONDA ]]; then
+#     export PATH=$PATH:$MINICONDA
+# fi
+
 # add flutter to PATH if exists
 FLUTTER_SDK="$HOME/flutter-sdk/flutter/bin"
 if [[ -d $FLUTTER_SDK ]]; then
@@ -26,10 +38,16 @@ if [[ -d $FLUTTER_SDK ]]; then
 fi
 
 
+# add yarn global to PATH if exists
+YARN_BIN="$HOME/.yarn/bin"
+if [[ -d $YARN_BIN ]]; then
+    export PATH=$PATH:$YARN_BIN
+fi
+
 # add nodejs to PATH if exists
-NPM="$HOME/.npm-global/bin"
-if [[ -d $NPM ]]; then
-    export PATH=$PATH:$NPM
+NPM_BIN="$HOME/.npm-global/bin"
+if [[ -d $NPM_BIN ]]; then
+    export PATH=$PATH:$NPM_BIN
 fi
 
 # add composer to PATH if exists
